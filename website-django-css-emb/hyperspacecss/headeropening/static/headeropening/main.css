@@ -2085,11 +2085,12 @@
 				-moz-transform: scale(1);
 				-webkit-transform: scale(1);
 				-ms-transform: scale(1);
-				transform: scale(1);
-				position: absolute;
-				left: 3em;
-				top: 3em;
+				transform: scale(2);
+				position: relative;
+				right: 99px;
+				bottom: 39px;
 				opacity: 1;
+                border-radius: 0.07em;
 			}
 
 			.features section:nth-child(1) .icon {
@@ -2531,7 +2532,7 @@
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
-		position: relative;
+		position: absolute;
 	}
 
 		.icon:before {
@@ -2552,7 +2553,7 @@
 			height: 2.5em;
 			display: block;
 			background: #ffffff;
-			border-radius: 100%;
+			border-radius: 0;
 			color: #999999;
 			text-align: center;
 			line-height: 2.5em;
