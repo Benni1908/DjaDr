@@ -41,15 +41,15 @@
 							<h1>Computed Tomography with Artificial Intelligence</h1>
 							<p>Analysing stategies using AI and neuronal networking. Log in to use or registrate.</p>
 							<ul class="actions">
-								<li><a href="#" class="button"> Log In</a></li>
-								<li><a href="#" class="button">Analyse Makrotwist für 360°</a></li>
-								<br><br>
-								<li><a href="#" class="button">Analyse Makrotwist für 36°</a></li>
-								<li><a href="#" class="button">Ergebnis</a></li>
+								{% if user.is_authenticated %}
+								<li><a href="login.html" class="button">Sign Out</a></li>
+								{% else %}
+                                <li><a href="login.html" class="button">Sign In</a></li>
+                                {% endif %}
+								<li><a href="signup.html" class="button">Sign Up</a></li>
 							</ul>
 						</div>
 					</section>
-
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
@@ -187,6 +187,7 @@
 			<script src="{% static 'headeropening/js/skel.min.js' %}"></script>
 			<script src="{% static 'headeropening/js/util.js' %}"></script>
 			<script src="{% static 'headeropening/js/main.js' %}"></script>
+
 
 	</body>
 </html>
