@@ -41,12 +41,20 @@
 							<h1>Artificial Intelligence for Measurement Techniques</h1>
 							<p>Analysing stategies using AI and neuronal networking. Sign in to use or Sign up for Registration.</p>
 							<ul class="actions">
+<<<<<<< HEAD
 								<li><a href="#" class="button"> Sign In</a></li>
 								<li><a href="#" class="button"> Sign Up</a></li>
+=======
+								{% if user.is_authenticated %}
+								<li><a href="login.html" class="button">Sign Out</a></li>
+								{% else %}
+                                <li><a href="login.html" class="button">Sign In</a></li>
+                                {% endif %}
+								<li><a href="signup.html" class="button">Sign Up</a></li>
+>>>>>>> 98fcdcc1b424ba2b2d80dacb2168ea7e883bd8e3
 							</ul>
 						</div>
 					</section>
-
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
@@ -184,6 +192,7 @@
 			<script src="{% static 'headeropening/js/skel.min.js' %}"></script>
 			<script src="{% static 'headeropening/js/util.js' %}"></script>
 			<script src="{% static 'headeropening/js/main.js' %}"></script>
+
 
 	</body>
 </html>
