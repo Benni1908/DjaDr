@@ -2009,8 +2009,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: #99ccff !important;
-            color: #99ccff !important;
+			border-color: #ff0000 !important;
+            color: #ff0000 !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -3040,7 +3040,7 @@
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(255, 255, 255, 0.9);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3052,7 +3052,7 @@
 			}
 
 		.spotlights > section > .content {
-			padding: 4em 5em 2em 5em ;
+			padding: 1em 1em 1em 1em ;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -3065,7 +3065,7 @@
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: 100em;
 			-ms-flex: 1;
 		}
 
@@ -3256,7 +3256,7 @@
 
 		.wrapper.style2 {
 			/*background-color: #120d21;*/
-			background-color: #F7F7FF;
+			background-color: #FFFFFF;
 		}
 
 		.wrapper.style1-alt {
@@ -3265,7 +3265,7 @@
 
 		.wrapper.style1 {
 			/*background-color: #5052b5;*/
-            background-color: #ECF5FF;
+            background-color: #FFFFFF;
 		}
 
 		.wrapper.style2-alt {
@@ -3479,7 +3479,7 @@
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 18em;
+		margin-left: 13em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3506,7 +3506,7 @@
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 18em;
+		margin-left: 13em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3547,7 +3547,7 @@
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 18em;
+		width: 13em;
 		z-index: 10000;
 	}
 
@@ -3751,7 +3751,7 @@
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: #999999;
+			color: #464646;
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3771,7 +3771,7 @@
 				height: 0.2em;
 				position: absolute;
 				right: 0;
-				width: 100%;
+				width: 0%;
 			}
 
 			#sidebar nav a:before {
