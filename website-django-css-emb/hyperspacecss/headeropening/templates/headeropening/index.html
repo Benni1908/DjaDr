@@ -14,7 +14,8 @@
 		<link href="{% static 'headeropening/main.css' %}" rel="stylesheet">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	</head>
 	<body>
 
@@ -41,16 +42,39 @@
 							<h1>Artificial Intelligence for Measurement Techniques</h1>
 							<p>Analysing stategies using AI and neuronal networking. Sign in or Sign up for Registration.</p>
 							<ul class="actions">
-								<li><a href="#" class="button"> Sign In</a></li>
-								<li><a href="#" class="button"> Sign Up</a></li>
-								<!-- {% if user.is_authenticated %}
-								<li><a href="headeropening/logout" class="button">Sign Out</a></li>
-								{% else %}
+                                <!--{% if request.user.is_authenticated %}-->
+                                <!--<li><a href="{% url 'logout' %}">Logout</a></li>-->
+                                <!--{% else %}-->
+                                <!--<li><a href="{% url 'registration_register' %}">Register</a></li>-->
+                                <!--{% endif %}-->
+                            <!--</ul>-->
+
+								 {% if user.is_authenticated %}
+								<li><a href="logout/" class="button">Log Out</a></li>
+                                <!--<li><a href="{% url 'logout' %}?next=headeropening">Log Out</a></li>-->
                                 <li><a href="login.html" class="button">Sign In</a></li>
+
+                                <li><a href="signup.html" class="button">Sign Up</a></li>
+
+                                {% else %}
+                                <li><a href="login.html" class="button">Sign In</a></li>
+                                <li><a href="signup.html" class="button">Sign Up</a></li>
+
                                 {% endif %}
-								<li><a href="signup.html" class="button">Sign Up</a></li>
-								-->
 							</ul>
+
+                            <!--{% if not request.user.is_authenticated %}-->
+                            <!--<form method='POST' action='{% url "login" %}'>{%csrf_token %}-->
+                                <!--<div class="form-group">-->
+                                    <!--<input type="text" class="form-control" name="username" placeholder="username" />-->
+                                <!--</div>-->
+                                <!--<div class="form-group">-->
+                                    <!--<input type="password" class="form-control" name="password" placeholder="Password" />-->
+                                <!--</div>-->
+                                <!--<button type="summit" class="button">Log In</button>-->
+
+                            <!--</form>-->
+                            <!--{% endif %}-->
 						</div>
 					</section>
 				<!-- One -->
@@ -100,7 +124,7 @@
 							<p>Insgesamt sind momentan 21 Mitarbeiter am Lehrstuhl beschäftigt.<br>Das Hauptmerkmal des Lehrstuhls liegt in der Messung von technischen Oberflächen, hierfür stehen diverse Messgeräte zur Verfügung.</p>
 							<div class="features">
 								<section>
-									<span class="icon major fa-search"></span>
+									<span class="icon major fas fa-search"></span>
                                     <h3>Forschung</h3>
                                     <p>Inline-Produktionsmesstechnik<br>Optische Oberflächenmesstechnik<br>3D Oberflächencharakterisierung</p>
                                     <ul class="actions">
@@ -108,7 +132,7 @@
 									</ul>
 								</section>
 								<section>
-									<span class="icon major fa-graduation-cap"></span>
+									<span class="icon major fas fa-graduation-cap"></span>
 									<h3>Lehre</h3>
 									<p>Der Lehrstuhl betreut Vorlesungen, Praktikas und Labore<br><br></p>
                                     <ul class="actions">
@@ -116,22 +140,23 @@
 									</ul>
 								</section>
 								<section>
-									<span class="icon major fa-cog"></span>
+									<span class="icon major  fas fa-cog"></span>
 									<h3>optische Messtechnik</h3>
 									<p></p>
 								</section>
 								<section>
-									<span class="icon major fa-desktop"></span>
+									<span class="icon major fas fa-desktop"></span>
 									<h3>taktische Messtechnik</h3>
 									<p></p>
 								</section>
 								<section>
-									<span class="icon major fa-chain"></span>
+									<span class="icon major fas fa-chain"></span>
+									<p class="fa fa-battery-three-quarters" </p>
 									<h3>ANC</h3>
 									<p></p>
 								</section>
 								<section>
-									<span class="icon major fa-file"></span>
+									<span class="icon major fas fa-file"></span>
 									<h3>Rk-Normale</h3>
 									<p>Das weltweit erste Rk-Normal wurde am Lehrstuhl entwickelt</p>
                                     <ul class="actions">
